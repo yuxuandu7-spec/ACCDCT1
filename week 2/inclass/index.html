@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(247, 173, 146);
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 20px;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 20px auto;
+            text-align: center;
+            border-bottom: 2px black solid;
+            padding-bottom: 15px;
+        }
+
+        nav ul li:last-child {
+            border-bottom: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        .active{
+            font-weight: bold;
+        }
+        .cursive{
+            font-weight: bold;
+
+        }
+
+        @media (min-width: 768px) {
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+            }
+            nav ul li {
+                border-bottom: none;
+                margin: 10px;
+                padding: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header style="background-color: rgb(224, 201, 224);">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li class="active cursive another-class"><a href="#">Blog</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Hi this is Kelly's page</p>
+    </main>
+    <footer></footer>
+</body>
+</html>
