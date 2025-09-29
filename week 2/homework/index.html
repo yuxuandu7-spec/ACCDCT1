@@ -23,7 +23,7 @@
         nav ul li {
             margin: 20px auto;
             text-align: center;
-            border-bottom: 2px black solid;
+            border-bottom: 10px rgb(252, 193, 134) solid;
             padding-bottom: 15px;
         }
 
@@ -34,7 +34,7 @@
         nav ul li a {
             text-decoration: none;
             color: black;
-            text-transform: uppercase;
+            text-transform:capitalize;
         }
         .active{
             font-weight: bold;
@@ -42,6 +42,17 @@
         .cursive{
             font-weight: bold;
 
+        }
+
+        @media (max-width: 360px) {
+            nav ul {
+                display: flex;
+                justify-content: flex-end;
+            }
+            nav ul li {
+                background-color: aquamarine;
+                margin: auto;
+            }
         }
 
         @media (min-width: 768px) {
@@ -55,6 +66,8 @@
                 padding: 0;
             }
         }
+
+    
 
     </style>
 </head>
