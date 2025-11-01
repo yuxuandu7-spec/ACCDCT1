@@ -7,7 +7,6 @@ function setup() {
   createCanvas(1000, 800);
   colorMode(HSB, TWO_PI, 1, 1);
   
- 
 
 radius = width * 0.1
     strokeCap(SQUARE)
