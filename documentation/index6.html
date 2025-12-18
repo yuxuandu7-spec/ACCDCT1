@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> Creative Technology 1 documentation
+</head>
+<body>
+    <h1>Week 13 Milti-channel controller</h1>
+    <p>Although only a single button was used, it was designed as a multi-state controller. Different button interactions trigger different visual behaviors, effectively creating multiple control channels from one physical input.
+    <h2>Work Process</h2>
+    <p>I connected a button to an ESP32 on pin 27 using the internal pull-up resistor.
+    The ESP32 reads the button state and sends 1 or 0 to Processing through serial.
+    In Processing, the button is used to switch between different visual modes instead of just on and off.
+    Each button press changes how the visuals behave.</p>
+    </p>
+     <h2>Result</h2>
+     <p>The button controls multiple visual parameters by switching modes.
+    Even with only one button, the interaction feels rich and dynamic.
+    This project shows how a simple input can create different visual effects.</p>
+    <a href="https://vimeo.com/1147564476?fl=ip&fe=ec"target="blank"> VIDEO is here</a>
+</body>
+</html>
