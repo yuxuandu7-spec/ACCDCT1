@@ -3,22 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Dream Space</title> Creative Technology 2 documentation
+    <title>Virtual Dream Space</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #0d0d2b, #1a1a40);
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffe066;
+            text-shadow: 2px 2px 10px #ff66ff;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ff99cc;
+            margin-top: 2rem;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0.5rem auto 1.5rem auto;
+            padding: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* 图片样式 */
+        img {
+            display: block;
+            max-width: 90%;
+            height: auto;
+            margin: 1rem auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        /* 容器样式 */
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 20px;
+            max-width: 900px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+        }
+
+        .video-link {
+            display: block;
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #ff66ff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Floating Island Dream</h1>
-    <h2>Description</h2>
-    <p>Space Description:
-A small island floats in the sky, surrounded by clouds. Trees, a house, and glowing crystals make it feel magical and dreamy. Stars are scattered for the player to collect.
 
-Interactions:
+    <div class="section">
+        <h1>Floating Island Dream</h1>
+        <h2>Description</h2>
+        <p><span class="highlight">Space Description:</span> A small island floats in the sky, surrounded by clouds. Trees, a house, and glowing crystals make it feel magical and dreamy. Stars are scattered for the player to collect.</p>
+        <p><span class="highlight">Interactions:</span></p>
+        <ul>
+            <li>Touch the crystal → the island slowly rises, clouds move, and a sound plays.</li>
+            <li>Jump on the clouds → the player bounces higher using physics.</li>
+            <li>Collect stars → each star disappears, and after collecting all, a rainbow gate appears.</li>
+        </ul>
+    </div>
 
-Touch the crystal → the island slowly rises, clouds move, and a sound plays.
+    <div class="section">
+        <h2>Sketch</h2>
+        <img src="1.jpg" alt="Sketch of the floating island dream space">
+        <p>Clouds are bounce platforms<br>
+        Stars are collectibles<br>
+        Crystal triggers special interaction<br>
+        Rainbow Gate appears after collecting stars</p>
+    </div>
 
-Jump on the clouds → the player bounces higher using physics.
+    <div class="section">
+        <h2>Interactive Elements</h2>
+        <p><span class="highlight">Player Movement:</span> The player can walk around the island using a first-person controller.</p>
+        <p><span class="highlight">Clouds:</span> Act as bouncing platforms. Jumping on them propels the player upward.</p>
+        <p><span class="highlight">Stars:</span> Collectible objects that disappear when touched, increasing the star count.</p>
+        <p><span class="highlight">Crystal:</span> Triggers a special interaction, launching the player upward into space.</p>
+        <p><span class="highlight">Rainbow Gate:</span> Appears after collecting all five stars. Entering the gate shows a victory message with music and particles.</p>
+    </div>
 
-Collect stars → each star disappears, and after collecting all, a rainbow gate appears. </p>
-    <h2>Sketch</h2>
-    <p>1</p>
+    <div class="section">
+        <h2>Development Process</h2>
+        <ol>
+            <li><span class="highlight">Scene Setup:</span> Created floating island environment with dark space skybox.</li>
+            <li><span class="highlight">Player Movement:</span> Implemented first-person controller.</li>
+            <li><span class="highlight">Environment Objects:</span> Added house, trees, clouds, stars, and crystal.</li>
+            <li><span class="highlight">Interactive Systems:</span> Clouds bounce, stars collectible, crystal launches player.</li>
+            <li><span class="highlight">Game Goal:</span> Added rainbow gate after collecting stars.</li>
+            <li><span class="highlight">Feedback Effects:</span> Music, particle effects, and victory message at the end.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Images</h2>
+        <img src="截屏2026-03-31 上午2.19.22.png" alt="Screenshot 1">
+        <img src="截屏2026-03-31 上午4.46.09.png" alt="Screenshot 2">
+        <img src="截屏2026-03-31 上午6.09.45.png" alt="Screenshot 3">
+        <img src="截屏2026-03-31 上午6.10.36.png" alt="Screenshot 4">
+        <img src="cloud1.png" alt="Cloud Image">
+        <img src="cry" alt="Crystal Image">
+        <img src="IMG_7720.JPG" alt="Additional Image">
+        <a class="video-link" href="https://vimeo.com/1178827114?share=copy&fl=sv&fe=ci" target="_blank">▶ Watch Video</a>
+    </div>
+
 </body>
 </html>
